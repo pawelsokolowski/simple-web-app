@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pmJ5qjlNKaRDDEOjB+AvjRJaHZXFXoNaf3l2OeB/TXzfhtbfbCVrFQBq12/ng34BwDnK3iYSa4H2LYS3/xM61Q==",
+  "dgSpecHash": "Fq9X14Zf6bfi+cLRna6pN1KRDaKfwsnhra3Du08dBFobz0rHR++MOPz4WYNagsMXBW/pnUIsXpOmxR5RRLUUxw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DS247NH\\OneDrive - EY\\Documents\\GitHub\\simple-web-app\\simple-web-app.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DS247NH\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,7 @@
+C:\Users\DS247NH\OneDrive - EY\Documents\GitHub\simple-web-app\obj\Docker\publish\simple-web-app.exe
+C:\Users\DS247NH\OneDrive - EY\Documents\GitHub\simple-web-app\obj\Docker\publish\appsettings.Development.json
+C:\Users\DS247NH\OneDrive - EY\Documents\GitHub\simple-web-app\obj\Docker\publish\appsettings.json
+C:\Users\DS247NH\OneDrive - EY\Documents\GitHub\simple-web-app\obj\Docker\publish\simple-web-app.dll
+C:\Users\DS247NH\OneDrive - EY\Documents\GitHub\simple-web-app\obj\Docker\publish\simple-web-app.deps.json
+C:\Users\DS247NH\OneDrive - EY\Documents\GitHub\simple-web-app\obj\Docker\publish\simple-web-app.runtimeconfig.json
+C:\Users\DS247NH\OneDrive - EY\Documents\GitHub\simple-web-app\obj\Docker\publish\simple-web-app.pdb
