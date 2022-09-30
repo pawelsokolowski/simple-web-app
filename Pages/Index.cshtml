@@ -1,7 +1,9 @@
 ﻿@page
+@inject IConfiguration Configuration
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+
 }
 
 <div class="text-center">
@@ -9,4 +11,5 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <p>This is just a simple application for testig various deployment options</p>
     <p>Version as of 9/20 5:00pm</p>
+    <p>@Configuration["Region"]</p>
 </div>
