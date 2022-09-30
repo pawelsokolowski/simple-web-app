@@ -99,26 +99,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DS247NH\\.nuget\\packages\\": {}
+    "/Users/Pawel.Sokolowski1/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DS247NH\\OneDrive - EY\\Documents\\GitHub\\simple-web-app\\simple-web-app.csproj",
+      "projectUniqueName": "/Users/Pawel.Sokolowski1/Library/CloudStorage/OneDrive-EY/Documents/GitHub/simple-web-app/simple-web-app.csproj",
       "projectName": "simple-web-app",
-      "projectPath": "C:\\Users\\DS247NH\\OneDrive - EY\\Documents\\GitHub\\simple-web-app\\simple-web-app.csproj",
-      "packagesPath": "C:\\Users\\DS247NH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DS247NH\\OneDrive - EY\\Documents\\GitHub\\simple-web-app\\obj\\",
+      "projectPath": "/Users/Pawel.Sokolowski1/Library/CloudStorage/OneDrive-EY/Documents/GitHub/simple-web-app/simple-web-app.csproj",
+      "packagesPath": "/Users/Pawel.Sokolowski1/.nuget/packages/",
+      "outputPath": "/Users/Pawel.Sokolowski1/Library/CloudStorage/OneDrive-EY/Documents/GitHub/simple-web-app/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DS247NH\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Pawel.Sokolowski1/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -161,7 +160,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }
