@@ -50,10 +50,18 @@ jobs:
         with:
           creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUB_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}' 
 
-      - name: Deploy to containerapp
+      - name: Deploy to US containerapp
         uses: azure/CLI@v1
         with:
           inlineScript: |
             az config set extension.use_dynamic_install=yes_without_prompt
             az containerapp registry set -n sample-app-eastus -g container-app-lab --server pslabsacr.azurecr.io --username  ${{ secrets.SAMPLEAPPEASTUS_REGISTRY_USERNAME }} --password ${{ secrets.SAMPLEAPPEASTUS_REGISTRY_PASSWORD }}
             az containerapp update -n sample-app-eastus -g container-app-lab --image pslabsacr.azurecr.io/sample-app-eastus:${{ github.sha }}
+
+      - name: Deploy to Australia containerapp
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az config set extension.use_dynamic_install=yes_without_prompt
+            az containerapp registry set -n sample-app-auseast -g container-app-lab --server pslabsacr.azurecr.io --username  ${{ secrets.SAMPLEAPPEASTUS_REGISTRY_USERNAME }} --password ${{ secrets.SAMPLEAPPEASTUS_REGISTRY_PASSWORD }}
+            az containerapp update -n sample-app-auseast -g container-app-lab --image pslabsacr.azurecr.io/sample-app-eastus:${{ github.sha }}
