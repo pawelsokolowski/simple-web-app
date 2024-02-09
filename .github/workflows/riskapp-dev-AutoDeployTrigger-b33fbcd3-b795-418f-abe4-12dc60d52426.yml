@@ -1,0 +1,43 @@
+name: Trigger auto deployment for riskapp-dev
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ main ]
+    paths:
+    - '**'
+    - '.github/workflows/riskapp-dev-AutoDeployTrigger-b33fbcd3-b795-418f-abe4-12dc60d52426.yml'
+
+  # Allow manual trigger 
+  workflow_dispatch:
+      
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.RISKAPPDEV_AZURE_CREDENTIALS }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v2
+        with:
+          appSourcePath: ${{ github.workspace }} 
+          registryUrl: sig01.azurecr.io
+          registryUsername: ${{ secrets.RISKAPPDEV_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.RISKAPPDEV_REGISTRY_PASSWORD }}
+          containerAppName: riskapp-dev
+          resourceGroup: riskapp-dev
+          imageToBuild: sig01.azurecr.io/riskapp-dev:${{ github.sha }}
+          
+            
+
+     
+
